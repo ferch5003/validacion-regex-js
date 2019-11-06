@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans'
+            rel='stylesheet' type='text/css'>
+        <script src="myapp.js"></script>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <div id="container">
+
+            <div id="form1">
+
+                <form>
+                    <ul class="form-style-1">
+                        <h1>Validación de contraseñas</h1>
+                        <li>
+                            <label>Contraseña</label>
+                            <input type="text" name="contra" id="contra"
+                                required>
+                        </li>
+                        <li>
+                            <label>Minima longitud: 8</label>
+                        </li>
+                        <li>
+                            <label>Minima cantidad de dígitos: 1</label>
+                        </li>
+                        <li>
+                            <label>Minima cantidad de minúsculas: 1</label>
+                        </li>
+                        <li>
+                            <label>Minima cantidad de mayúsculas: 1</label>
+                        </li>
+                        <li>
+                            <label>Minima cantidad de caracteres especiales: 1</label>
+                        </li>
+                        <li>
+                            <input type="button" name="submit" value="Submit"
+                                onclick=submitData() />
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+            <div id="form2">
+                <form>
+                    <ul class="form-style-1">
+                        <h1>Variable validator</h1>
+                        <li>
+                            <label>Variable</label>
+                            <input type="text" name="variable" id="variable">
+                        </li>
+                        <li>
+                            <label>Las variables deben empezar con $, _ o cualquier letra del abecedario en mayuscula o minuscula</label>
+                        </li>
+                        <li>
+                            <input type="button" name="submit-var"
+                                value="Submit"
+                                onclick=submitVar() />
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
